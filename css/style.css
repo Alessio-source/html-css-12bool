@@ -1,0 +1,27 @@
+/* i container sono divisi per riga */
+.container:first-of-type > [class*="col-"],
+.container:nth-child(2) > [class*="col-"],
+.container:nth-child(3) > [class*="col-"],
+.container:nth-child(4) > [class*="col-"],
+.container:nth-child(5) > .col-6 > [class*="col-"]{
+  height: 200px;
+}
+
+.container:first-of-type > [class*="col-"],
+.container:nth-child(2) > [class*="col-"],
+.container:nth-child(3) > [class*="col-"],
+.container:nth-child(4) > [class*="col-"],
+.container:nth-child(5) > .col-6 {
+  background-color: pink;
+  border: 1px solid black;
+}
+/* /i container sono divisi per riga */
+
+.container:nth-child(5) > .col-6 > [class*="col-"] {
+  background-color: LightCoral;
+  border: 1px solid white;
+}
+
+.container:nth-child(5) > .col-6 {
+  padding: 10px;
+}
